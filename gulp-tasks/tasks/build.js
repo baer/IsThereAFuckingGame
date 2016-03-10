@@ -11,7 +11,7 @@ gulp.task("build:set-development", false, setEnv.bind(null, "NODE_ENV", "develop
 gulp.task("build:set-production", false, setEnv.bind(null, "NODE_ENV", "production"));
 
 gulp.task("build:tasks", false, [
-  "javascript",
+  // "javascript",
   "styles",
   "static"
 ]);

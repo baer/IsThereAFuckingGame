@@ -48,7 +48,10 @@
   },
 
   "scripts": {
-    "test": "gulp lint && gulp test-phantom"
+    "test": "gulp lint && gulp test-phantom",
+    "build:elm": "elm make ./src/client/elm/main.elm --output ./dist-dev/js/main.bundle.js",
+    "build:project": "gulp build-development",
+    "build": "npm run build:project && npm run build:elm"
   },
 
   "engines":{

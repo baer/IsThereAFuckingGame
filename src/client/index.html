@@ -22,7 +22,7 @@
 
     <div class="container">
 
-      <div id="react-container"></div>
+      <div id="app"></div>
 
       <footer>
         <span class="personal-links">
@@ -42,6 +42,10 @@
     </div>
 
     <script src="js/main.bundle.js"></script>
+    <script>
+      var div = document.getElementById("app");
+      Elm.embed(Elm.Rockies, div, { appStartTime: Date.now() });
+    </script>
 
     <script>
       // Google Analytics
